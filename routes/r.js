@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.delete('/D/:id', deleteReview); // ลบรีวิวตาม ID
 
-router.get('/E/:id', editReview); // ดึงรีวิวของสถานที่ตาม ID
+router.post('/E/:id', editReview); // ดึงรีวิวของสถานที่ตาม ID
 
 router.get('/:id', getReviewsById); // ดึงรีวิวของสถานที่
 

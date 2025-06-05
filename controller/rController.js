@@ -59,6 +59,9 @@ exports.addReview = (req, res) => {
 
 
 exports.editReview = (req, res) => {
+  console.log('Request body for edit:', req.body); // Log the request body to see what is being sent
+  console.log('Request params for edit:', req.params); // Log the request params to see the ID being edited
+  
   const { id } = req.params;
   const { user, comment, rating } = req.body;
 
